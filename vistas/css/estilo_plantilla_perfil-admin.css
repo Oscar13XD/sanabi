@@ -1,0 +1,99 @@
+.margen{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.informacion{
+    display: flex;
+    width: 60%;
+    height: max-content;
+}
+
+.contenedor-img{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedor-img img{
+    width: 300px;
+    height: 300px;
+}
+
+.contendor-datos{
+    display: flex;
+    width: 50%;
+    height: max-content;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 20px;
+}
+
+.contendor-datos div{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: max-content;
+    border-bottom: white solid 8px;
+}
+
+.seleccionar-archivo-vista{
+    position: relative;
+	background-color: white;
+	width: 140px;
+	height: 46px;
+	border-bottom-left-radius: 13px;
+	border-top-left-radius: 13px;
+	text-align: center;
+	padding-top: 10px;
+	transition: -3s;
+	cursor: pointer;
+    margin-top: 20px;
+}
+.seleccionar-archivo{
+    position: absolute;
+	width: 140px;
+	height:46px;
+	border-bottom-left-radius: 13px ;
+	cursor: pointer;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+	cursor: pointer;
+}
+.seleccionar-archivo-vista:hover{
+	background-color: #00AB8D;
+    color: white;
+}
+.guardar{
+	width: 101px;
+	height: 46px;
+	border-bottom-right-radius: 13px ;
+	border-top-right-radius: 13px ;
+	text-align: center;
+	color: white;
+	padding-top: 10px;	
+	transition: .3s;
+	cursor: pointer;
+    margin-top: 20px;
+
+}
+.guardar:hover{
+	background-color: #086e3f!important;
+}
