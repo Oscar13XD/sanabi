@@ -1,4 +1,5 @@
 var imagen_usuario;
+$('#titulo_header').html(`BIENVENIDO ADMINISTRADOR`);
 traerImagen();
 $('#seleccionar-imagen').on("change",function(){
     let imagen = $(this)[0].files[0];
