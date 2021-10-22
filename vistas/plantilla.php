@@ -6,6 +6,7 @@ require_once "controlador/controladorInicioUsuario.php";
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="vistas/bootstrap-5/css/bootstrap.min.css">
     <link rel="stylesheet" href="vistas/css/estilo_body.css">
     <link rel="icon"  href="vistas/img/logo.ico">
