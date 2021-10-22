@@ -20,6 +20,7 @@ require_once "controlador/controladorInicioUsuario.php";
                 $_GET["pagina"]=="plantilla_registro-usuario"||
                 $_GET["pagina"]=="plantilla_inicio-admin"||
                 $_GET["pagina"]=="plantilla_inicio-user"||
+                $_GET["pagina"]=="plantilla_olvido-contraseña"||
                 $_GET["pagina"]=="plantilla_cerrar-sesion"
             ){
                 include "paginas/".$_GET["pagina"].".php";
