@@ -82,9 +82,34 @@ th{
     border: 2px solid white;
 }
 
+th div{
+    width: max-content;
+}
+
 td{
     color: white;
     border: 2px solid white;
+}
+
+td div{
+    width: max-content;
+}
+
+td div .titulo{
+    width: 200px;
+    min-height: 50px;
+    text-align: center;
+}
+
+td div .descripcion{
+    width: 600px;
+    min-height: 50px;
+}
+
+td textarea{
+    width: max-content;
+    background-color: transparent;
+    color: white;
 }
 
 .categoria select option{
@@ -101,3 +126,42 @@ td{
     color:white;
     background-color:#43FF51;
 }
+
+.modal-header{
+    background-color: #00AB8D;
+    color: white;
+}
+
+.registro-noticia{
+    width: 100%;
+}
+
+.titulo-noticia{
+    border: #00AB8D solid 3px;
+    padding: 10px;
+}
+
+.imagen-enunciado{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.imagen-enunciado .contenedores{
+    padding: 10px;
+    width: 49.5%;
+    border: #00AB8D solid 3px;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.contenedores div textarea{
+    width: 100%;
+    height: 200px;
+}
+
