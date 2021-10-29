@@ -16,7 +16,7 @@
                 <button type="submit">INGRESAR</button>
             </div>
             <div class="olvidar-contraseña">
-                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="index.php?pagina=plantilla_olvido-contraseña">¿Olvidaste tu contraseña?</a>
             </div>
         </form>
     </div>
