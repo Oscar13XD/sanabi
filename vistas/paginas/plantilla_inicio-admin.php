@@ -26,13 +26,17 @@ $usuario=$_SESSION["validarIngreso"][1];
         <ul>
             <li><a href="index.php?pagina=plantilla_inicio-admin&nav=plantilla_perfil-admin">INICIO</a></li>
             <li><a href="index.php?pagina=plantilla_inicio-admin&nav=plantilla_publicar-noticias">PUBLICAR</a></li>
+            <li><a href="index.php?pagina=plantilla_inicio-admin&nav=plantilla_registro-usuarios">USUARIOS</a></li>
+            <li><a href="index.php?pagina=plantilla_inicio-admin&nav=plantilla_registro-noticias">NOTICIAS Y TIPS</a></li>
             <li class="item_r"><a href="index.php?pagina=plantilla_cerrar-sesion">CERRAR SESION</a></li>
         </ul>
     </nav>
     <?php
         if(isset($_GET["nav"])){
             if($_GET["nav"]=="plantilla_perfil-admin"||
-                $_GET["nav"]=="plantilla_publicar-noticias"
+                $_GET["nav"]=="plantilla_publicar-noticias"||
+                $_GET["nav"]=="plantilla_registro-usuarios"||
+                $_GET["nav"]=="plantilla_registro-noticias"
             ){
                 include $_GET["nav"].".php";
             }else{

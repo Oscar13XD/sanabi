@@ -1,36 +1,68 @@
-traerCategorias();
+//traerCategorias();
+var imagen_usuario='';
 $('#titulo_header').html(`PUBLICAR NOTICIAS`);
 
-const btnAgregar=document.getElementById('btn-agregar');
-const lista=document.getElementById('lista');
+$('#agregar-noticia').submit(function(e){
+    const datosForm={
+        IDUsuario: IDUsuario,
+        Titulo: $('#titulo_noticia').val(),
+        Descripcion: $('#enunciado_noticia').val(),
+        Enlace: $('#enlace_noticia').val(),
+        Imagen: imagen_usuario
+    }
+    //console.log(datosForm);
+    let url='controlador/controladorRegistroNoticia.php';
+    $.post(url, datosForm, function(respuesta){
+        if(respuesta=="ok"){
+            $('#agregar-noticia').trigger('reset');
+            $('#imagen').html(``);
+            Swal.fire({
+                title: "Noticia Publicada",
+                icon: "success"
+            });
+        }
+    });
+    e.preventDefault();
+});
 
-btnAgregar.addEventListener('click', () =>{
+$('#agregar-tip').submit(function(e){
+    const datosForm={
+        IDUsuario: IDUsuario,
+        Titulo: $('#titulo_tip').val(),
+        Descripcion: $('#enunciado_tip').val()
+    }
+    let url='controlador/controladorRegistroTip.php';
+    $.post(url, datosForm, function(respuesta){
+        if(respuesta=="ok"){
+            $('#agregar-tip').trigger('reset');
+            Swal.fire({
+                title: "Tip Publicado",
+                icon: "success"
+            });
+        }
+    });
+    e.preventDefault();
+});
+
+$('#seleccionar-imagen').on("change",function(){
+    let imagen = $(this)[0].files[0];
+    let fileReader = new FileReader();
+    fileReader.readAsDataURL(imagen);
+    fileReader.onload = function(){
+        console.log()
+        imagen_usuario = fileReader.result
+        $('#imagen').html(`<img class="imagen-usuario" src="${fileReader.result}" alt="">`);
+    }
+});
+
+//const btnAgregar=document.getElementById('btn-agregar');
+//const lista=document.getElementById('lista');
+
+/*btnAgregar.addEventListener('click', () =>{
     const elemento=`<div class="categoria"> 
         <select class="" id="">	
             <option selected disabled value="">TIPO</option>
-            <option value="">ECONOMIA</option>
         </select>
     </div>`;
     lista.innerHTML+=elemento;
-});
-
-function traerCategorias(){
-    const listaCat=document.getElementById('lista-categorias');
-    const aprobar={
-        aprobar: "true"
-    }
-    let url='controlador/controladorSeleccionarRegistroCategoria.php';
-    $.ajax({
-        type: "GET",
-        data: aprobar,
-        url: url,
-        success: function(respuesta){
-            let categorias= JSON.parse(respuesta);
-            let plantilla='';
-            categorias.forEach(categoria => {
-                plantilla+=`<option value="${categoria.IDCategoria}">${categoria.Descripcion}</option>`
-            });
-            listaCat.innerHTML+=plantilla;
-        }
-    });
-}
+});*/

@@ -43,9 +43,14 @@
     border: white solid 5px;
 }
 
-.titulo-enunciado{
+.cotenedor-enu-img{
     margin-top: 10px;
     width: 100%;
+    display: flex;
+}
+
+.titulo-enunciado{
+    width: 50%;
 }
 
 .titulo-enunciado textarea{
@@ -59,7 +64,73 @@
     padding: 10px;
 }
 
+.imagen-noticia{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 300px;
+    justify-content: center;
+    border: white solid 5px;
+    margin-left: 5px;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.seleccionar-archivo-vista{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 30%;
+    display: flex;
+    z-index: 20;
+}
+
+.seleccionar-archivo-vista i{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    border: white solid 5px;
+    border-radius: 20px;
+}
+
+.seleccionar-archivo-vista input{
+    position: absolute;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.titulo-enlace{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.titulo-enlace textarea{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border: white solid 5px;
+    color: white;
+    font-size: 20px;
+    outline: white;
+    padding: 10px;
+}
+
 .titulo-enunciado textarea::placeholder{
+    color: white;
+}
+
+.titulo-enlace textarea::placeholder{
     color: white;
 }
 
@@ -112,4 +183,52 @@
     background-color: #43FF51;
     color: white;
     border: white solid 5px;
+}
+
+.tip{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.titulo-tip{
+    width: 100%;
+    height: max-content;
+}
+
+.titulo-tip input{
+    width: 100%;
+    background-color: transparent;
+    border: white solid 5px;
+    color: white;
+    font-size: 20px;
+    outline: white;
+    padding: 10px;
+}
+
+.titulo-tip input::placeholder{
+    color: white;
+}
+
+.titulo-tip input::selection{
+    border: white solid 5px;
+}
+
+.titulo-enunciado-tip{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.titulo-enunciado-tip textarea{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: white solid 5px;
+    color: white;
+    font-size: 20px;
+    outline: white;
+    padding: 10px;
+}
+
+.titulo-enunciado-tip textarea::placeholder{
+    color: white;
 }
