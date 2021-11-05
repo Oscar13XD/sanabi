@@ -34,7 +34,7 @@ $usuario=$_SESSION["validarIngreso"][1];
                 </div>
                 <div class="seleccionar-archivo-vista">
                     <i class="fas fa-plus"></i>
-            		<input type="file"id="seleccionar-imagen" class="seleccionar-archivo">
+            		<input type="file"id="seleccionar-imagen" class="seleccionar-archivo" required>
                     <div class="pt-5 mt-4">
                         IMAGEN
                     </div>

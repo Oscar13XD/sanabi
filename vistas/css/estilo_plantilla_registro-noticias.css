@@ -21,7 +21,6 @@
     width: 100%;
     height: max-content;
     justify-content: space-evenly;
-    border: white solid 5px;
     border-radius: 16px;
     padding: 10px;
 }
@@ -73,40 +72,40 @@
     border: white solid 5px;
 }
 
-thead tr{
+.contenedor-noticias thead tr{
     background-color: white;
 }
 
-th{
+.contenedor-noticias th{
     color: black;
     border: 2px solid white;
 }
 
-th div{
+.contenedor-noticias th div{
     width: max-content;
 }
 
-td{
+.contenedor-noticias td{
     color: white;
     border: 2px solid white;
 }
 
-td div{
+.contenedor-noticias td div{
     width: max-content;
 }
 
-td div .titulo{
+.contenedor-noticias td div .titulo{
     width: 200px;
     min-height: 50px;
     text-align: center;
 }
 
-td div .descripcion{
+.contenedor-noticias td div .descripcion{
     width: 600px;
     min-height: 50px;
 }
 
-td textarea{
+.contenedor-noticias td textarea{
     width: max-content;
     background-color: transparent;
     color: white;
@@ -155,6 +154,7 @@ td textarea{
 
 .imagen{
     display: flex;
+    position: relative;
     justify-content: center;
     width: 100%;
     height: 200px;
@@ -165,3 +165,46 @@ td textarea{
     height: 200px;
 }
 
+.agregar-img{
+    position: relative;
+    margin-top: -40px;
+    height: 40px;
+}
+
+.agregar-img i{
+    color: #00AB8D;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    font-size: 20px;
+    justify-content: center;
+    border: #00AB8D solid 3px;
+    border-radius: 16px;
+}
+
+.agregar-img input{
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 0;
+    opacity: 0;
+    border-radius: 16px;
+}
+
+.enlace-noticia{
+    border: #00AB8D solid 3px;
+    padding: 10px;
+}
+
+.cerrar{
+    float: right;
+}
+
+.categoria-noticia{
+    width: 100%;
+    border: #00AB8D solid 3px;
+}
