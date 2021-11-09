@@ -20,11 +20,27 @@
                 <tbody id="tabla-usuarios"></tbody>
             </table>
         </div>
-        <form id="registro-usuarios">
-
-        </form>
     </div>
+    <div Class="titulo-graficos">
+        <div>
+            ESTADISTICAS
+        </div>
+    </div>
+    <div class="contenedor-graficas">
+        <div>
+            <canvas id="numero_usuarios"></canvas>
+        </div>
+        <div>
+            <canvas id="numero_noticias-tips"></canvas>
+        </div>
+        <div>
+            <canvas id="numero_noticias-cat"></canvas>
+        </div>
+    </div>
+
+
     <script src="vistas/jquery-3/jquery-3.6.0.min.js"></script>
+    <script src="vistas/chart/chart.min.js"></script>
     <script src="vistas/js/plantilla_registro-usuarios.js"></script>
 </body>
 </html>

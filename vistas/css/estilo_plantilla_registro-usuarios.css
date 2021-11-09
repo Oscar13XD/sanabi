@@ -6,7 +6,7 @@
 }
 
 .contenedor-tabla{
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
@@ -26,4 +26,35 @@ th{
 td{
     color: white;
     border: 2px solid white;
+}
+
+.titulo-graficos{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-graficos div{
+    border: 5px solid white;
+    width: 40%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 16px;
+}
+
+.contenedor-graficas{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    justify-content: space-evenly;
+}
+
+.contenedor-graficas div{
+    width: 45%;
+    margin: 20px;
+    background-color: white;
 }
