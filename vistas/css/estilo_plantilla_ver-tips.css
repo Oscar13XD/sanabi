@@ -1,0 +1,56 @@
+.titulo-agregar-tip{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.titulo-agregar-tip div{
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    border: white solid 5px;
+    border-radius: 16px;
+    color: white;
+}
+
+.margen{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.titulo-tip{
+    display: flex;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-tip div{
+    width: 20%;
+    border: white solid 5px;
+    border-radius: 16px;
+    font-size: 20px;
+}
+
+.contenido-tip{
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    border: white solid 5px;
+    font-size: 20px;
+}
+
+.enunciado-tip{
+    width: 100%;
+}
+
+.info-tip{
+    width: 100%;
+    text-align: right;
+}

@@ -23,7 +23,8 @@ require_once "controlador/controladorInicioUsuario.php";
                 $_GET["pagina"]=="plantilla_olvido-contraseña"||
                 $_GET["pagina"]=="Plantilla_reset"||
                 $_GET["pagina"]=="plantilla_mail"||
-                $_GET["pagina"]=="plantilla_cerrar-sesion"
+                $_GET["pagina"]=="plantilla_cerrar-sesion"||
+                $_GET["pagina"]=="plantilla_PDF-noticia"
             ){
                 include "paginas/".$_GET["pagina"].".php";
             }else{
