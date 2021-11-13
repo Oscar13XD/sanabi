@@ -60,9 +60,12 @@
 }
 
 .enlace-noticia{
-    margin-top: 10px;
     width: 100%;
+    display: block;
+    margin-top: 10px;
     color: white;
+    overflow-x: scroll;
+
 }
 
 .enlace-noticia iframe{
