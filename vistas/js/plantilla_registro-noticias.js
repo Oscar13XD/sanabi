@@ -2,6 +2,7 @@ $('#titulo_header').html(`REGISTRO NOTICIAS`);
 const categoriasTabla=document.getElementById('categoria-noticia');
 traerCategorias();
 traerNoticias();
+traerTips();
 var imagen_usuario='';
 var IDNoticia;
 function traerNoticias(){
@@ -54,6 +55,39 @@ function traerCategorias(){
             listaCat.innerHTML+=plantilla;
         }
     });
+}
+
+function traerTips(){
+    const tabla=document.getElementById('tabla-tips');
+    const aprobar={
+        aprobar: "true"
+    }
+	let url='controlador/controladorSeleccionarRegistroTips.php';
+    $.ajax({
+        type: "GET",
+        data: aprobar,
+        url: url,
+        success: function(respuesta){
+            let tips=JSON.parse(respuesta);
+            //console.log(tips);
+			let plantilla='';
+            tips.forEach(tip => {
+                plantilla+=`<tr IDTip="${tip.IDTip}">
+                    <td><div>${tip.IDTip}</div></td>
+                    <td><div><div class="titulo">${tip.Titulo}</div></div></td>
+                    <td><div><div class="descripcion">${tip.Descripcion}</div></div></td>
+                    <td><div>${tip.Fecha}</div></td>
+                    <!--<td><div class="btn-group">
+                        <button type="button" class="btn btn-warning editar" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-pencil-alt"></i></button>
+                        <button type="button" class="btn btn-danger eliminar"><i class="fas fa-trash-alt"></i></button>
+                    </div></td>-->
+                </tr>`
+            });
+            tabla.innerHTML=plantilla;
+        }
+    });
+
+
 }
 
 $(document).on('click', '.editar', function(){

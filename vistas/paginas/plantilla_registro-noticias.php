@@ -97,6 +97,7 @@
             </div>
         </div>
     </div>
+
     <div class="contenedor-noticias table-responsive mb-4">
         <table class="table">
             <thead>
@@ -105,10 +106,9 @@
                     <th><div>TÍTULO</div></th>
                     <th><div>DESCRIPCIÓN</div></th>
                     <th><div>FECHA</div></th>
-                    <th><div>ACCIONES</div></th>
                 </tr>
             </thead>
-            <tbody id="tabla-noticias"></tbody>
+            <tbody id="tabla-tips"></tbody>
         </table>
     </div>
     <!-- Modal -->

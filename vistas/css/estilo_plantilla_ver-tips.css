@@ -31,7 +31,8 @@
 }
 
 .titulo-tip div{
-    width: 20%;
+    padding: 10px;
+    width: 50%;
     border: white solid 5px;
     border-radius: 16px;
     font-size: 20px;

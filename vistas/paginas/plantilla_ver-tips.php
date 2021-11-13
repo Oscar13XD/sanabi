@@ -22,13 +22,7 @@ $usuario=$_SESSION["validarIngreso"][1];
         <div>REGISTRO TIPS</div>
     </div>
     <div class="margen" id="tips">
-        <div class="titulo-tip">
-            <div>TITULO</div>
-        </div>
-        <div class="contenido-tip">
-            <div class="enunciado-tip">ENUNCIADO</div><hr>
-            <div class="info-tip">Fecha publicacion<br>Autor</div>
-        </div>
+        
     </div>
     <script src="vistas/jquery-3/jquery-3.6.0.min.js"></script>
     <script src="vistas/js/plantilla_ver-tips.js"></script>
